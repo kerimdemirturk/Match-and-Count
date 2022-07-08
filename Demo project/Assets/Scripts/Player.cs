@@ -11,14 +11,14 @@ public class Player : MonoBehaviour
 
     [SerializeField] private TouchSlider touchSlider;
     private Cube mainCube;
-
+    private bool canPlay; //to avoid holding down
     private bool isPointerDown;
     private Vector3 cubePos;
 
     void Start()
     {
         SpawnCube();
-
+        canPlay = true;
         //slider events
         touchSlider.OnPointerDownEvent += OnPointerDown;
         touchSlider.OnPointerDragEvent += OnPointerDrag;
@@ -51,9 +51,10 @@ public class Player : MonoBehaviour
 
     private void OnPointerUp()
     {
-        if (isPointerDown)
+        if (isPointerDown && canPlay)
         {
             isPointerDown = false;
+            canPlay = false;
            
 
             // Push the cube:
@@ -66,6 +67,7 @@ public class Player : MonoBehaviour
     private void SpawnNewCube()
     {
         mainCube.is›tMainCube = false;
+        canPlay = true;
         SpawnCube();
     }
 

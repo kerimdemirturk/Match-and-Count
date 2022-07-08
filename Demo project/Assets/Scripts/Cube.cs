@@ -5,10 +5,12 @@ using TMPro;
 
 public class Cube : MonoBehaviour
 {
+    static int staticID = 0;
     //array for numbers text on cube
     [SerializeField] private TMP_Text[] numberText;
 
     //cubes components and variables about cubes
+    [HideInInspector] public int CubeID;
     [HideInInspector] public Color CubeColor;
     [HideInInspector] public int CubeNumber;
     [HideInInspector] public Rigidbody cubeRb;
@@ -19,6 +21,7 @@ public class Cube : MonoBehaviour
     private void Awake()
     {
         //access cubes components
+        CubeID = staticID++;
         cubeMeshRen = GetComponent<MeshRenderer>();
         cubeRb = GetComponent<Rigidbody>();
     }

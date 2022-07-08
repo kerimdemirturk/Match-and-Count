@@ -1431,6 +1431,7 @@ GameObject:
   - component: {fileID: 1859457431}
   - component: {fileID: 1859457433}
   - component: {fileID: 1859457432}
+  - component: {fileID: 1859457434}
   m_Layer: 0
   m_Name: StartZone
   m_TagString: Untagged
@@ -1518,6 +1519,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1859457434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859457430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0e11f82975a72c4db6afefbce969276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1924300122
 GameObject:
   m_ObjectHideFlags: 0

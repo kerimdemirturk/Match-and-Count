@@ -355,6 +355,8 @@
 "Assets/Scripts/Cube.cs"
 "Assets/Scripts/CubeCollision.cs"
 "Assets/Scripts/CubeSpawner.cs"
+"Assets/Scripts/GameManager.cs"
+"Assets/Scripts/GameOver.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/TouchSlider.cs"
 -langversion:9.0
